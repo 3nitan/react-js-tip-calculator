@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form {
   display: flex;
   flex-direction: column;
+  gap: 5vh;
+  width: 50%;
+}
+
+.form-input img {
+  position: absolute;
+  margin-left: 1%;
+  margin-top: max(calc((7vh - 17px) / 2), 6.5px);
+}
+
+.form-input input {
+  height: max(7vh, 30px);
+  width: 100%;
+  padding-right: 1;
+  background-color: var(--very-light-grayish-cyan);
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: right;
+}
+
+.form-input input::placeholder {
+  color: var(--grayish-cyan);
+  font-size: 20px;
+  font-family: 'Space Mono', monospace;
+}
+
+.btn-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 15px;
+  /* row-gap: 5px; */
+  /* column-gap: 5px; */
+  gap: 10px;
+}
+
+.tip-btn {
+  background-color: var(--very-dark-cyan);
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  width: 100%;
+  height: 35px;
+}
+
+.custom-tip {
+  background-color: var(--very-light-grayish-cyan);
+  color: var(--grayish-cyan);
+  font-weight: bolder;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 35px;
+}
+
+.output {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  /* grid-template-columns: auto auto auto; */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.output-container {
+  width: 50%;
+  /* padding: 5%; */
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.output-wrapper {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  padding-top: 10px;
+  background-color: var(--very-dark-cyan);
+  border-radius: 10px;
+}
+
+.output-title {
+  color: var(--white);
+}
+
+span {
+  color: var(--very-light-grayish-cyan);
+}
+
+.output-value {
+  font-size: 36px;
+  color: var(--strong-cyan);
+}
+
+.reset-btn {
+  /* width: 100%; */
+  background-color: hsla(183, 51%, 31%, 0.884);
+  color: var(--very-dark-cyan);
+  border: none;
+  border-radius: 5px;
+  margin-top: 5.5rem;
+  height: 40px;
+  font-weight: bolder;
 }
