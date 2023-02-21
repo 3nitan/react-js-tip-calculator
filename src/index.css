@@ -26,11 +26,6 @@ body {
   justify-content: center;
 }
 
-.App {
-  /* height: 100vh; */
-  padding: 50px;
-}
-
 header {
   display: flex;
   align-items: center;
@@ -50,4 +45,30 @@ header {
 
 label {
   color: var(--grayish-cyan);
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    display: grid;
+    place-items: center;
+  }
+
+  .header {
+    display: grid;
+    place-items: center;
+    /* padding: 100%; */
+  }
+
+  .container {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    padding: 20px auto;
+    border-radius: 15px;
+  }
 }

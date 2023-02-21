@@ -14,7 +14,7 @@ function App() {
             <label>Bill</label>
             <br />
             <img src='/assets/icon-dollar.svg' alt='dollar icon' />
-            <input type='number' placeholder='0.00' />
+            <input type='number' placeholder='0.00 ' />
           </div>
 
           <div className='form-tip'>
@@ -34,7 +34,7 @@ function App() {
             <label>Number of People</label>
             <br />
             <img src='/assets/icon-person.svg' alt='' />
-            <input type='number' placeholder='0' />
+            <input type='number' placeholder='0 ' required />
           </div>
         </form>
         <div className='output-container'>
