@@ -156,7 +156,7 @@ span {
     flex-direction: column;
     /* gap: 2.5rem; */
     padding: 50px auto;
-    max-width: 100%;
+    width: 100%;
   }
 
   .form-input {
