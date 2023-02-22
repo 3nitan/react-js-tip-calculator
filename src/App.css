@@ -159,8 +159,9 @@ span {
     width: 100%;
   }
 
-  .form-input {
-    max-width: 100%;
+  .form-input input {
+    width: 70px;
+    overflow-x: auto;
   }
 
   .btn-container {
