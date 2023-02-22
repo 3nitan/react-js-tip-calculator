@@ -7,7 +7,7 @@
 
 .form-input img {
   position: absolute;
-  margin-left: 1%;
+  /* margin-left: 1%; */
   margin-top: max(calc((7vh - 17px) / 2), 6.5px);
 }
 
@@ -111,6 +111,7 @@ input::-webkit-inner-spin-button {
   display: grid;
   place-content: center;
   width: 100%;
+  overflow-x: hidden;
   padding-top: 10px;
   background-color: var(--very-dark-cyan);
   border-radius: 10px;
@@ -125,7 +126,7 @@ span {
 }
 
 .output-value {
-  font-size: 36px;
+  font-size: 30px;
   color: var(--strong-cyan);
 }
 
@@ -150,18 +151,28 @@ span {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .form {
     display: flex;
     flex-direction: column;
     /* gap: 2.5rem; */
     padding: 50px auto;
     width: 100%;
+    resize: none;
+    /* overflow-x: auto; */
+  }
+
+  form.form {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .form-input {
+    max-width: 100%;
   }
 
   .form-input input {
-    width: 100%;
-    overflow-x: auto;
+    resize: none;
   }
 
   .btn-container {
@@ -175,5 +186,9 @@ span {
 
   .output-wrapper {
     padding: 20px;
+  }
+
+  .output-value {
+    width: 100%;
   }
 }

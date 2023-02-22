@@ -52,7 +52,7 @@ label {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   body {
     display: grid;
     place-items: center;
@@ -67,7 +67,7 @@ label {
   .container {
     display: grid;
     place-items: center;
-    width: 100%;
+    width: 400px;
     padding: 20px auto;
     border-radius: 15px;
   }
