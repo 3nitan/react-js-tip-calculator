@@ -160,7 +160,7 @@ span {
   }
 
   .form-input input {
-    width: 350px;
+    width: 100%;
     overflow-x: auto;
   }
 
