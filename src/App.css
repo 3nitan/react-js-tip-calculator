@@ -146,15 +146,17 @@ span {
 }
 
 @media screen and (max-wdith: 900px) {
+  .form {
+  }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .form {
     display: flex;
     flex-direction: column;
     /* gap: 2.5rem; */
     padding: 50px auto;
-    width: 100%;
+    max-width: 100%;
   }
 
   .btn-container {
@@ -163,7 +165,7 @@ span {
   }
 
   .output-container {
-    width: 100%;
+    max-width: 100%;
   }
 
   .output-wrapper {
