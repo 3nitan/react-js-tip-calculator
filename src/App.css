@@ -95,7 +95,7 @@ input::-webkit-inner-spin-button {
 .output {
   display: flex;
   justify-content: space-around;
-  gap: 50px;
+  gap: 100px;
   /* grid-template-columns: auto auto auto; */
   align-items: center;
 }
