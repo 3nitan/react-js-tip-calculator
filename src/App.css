@@ -153,31 +153,7 @@ span {
 
 @media screen and (max-width: 600px) {
   .form {
-    display: flex;
-    flex-direction: column;
-    /* gap: 2.5rem; */
-    padding: 50px auto;
     width: 100%;
-    resize: none;
-    /* overflow-x: auto; */
-  }
-
-  form.form {
-    width: 100%;
-    overflow-x: auto;
-  }
-
-  .form-input {
-    max-width: 100%;
-  }
-
-  .form-input input {
-    resize: none;
-  }
-
-  .btn-container {
-    display: grid;
-    grid-template-columns: auto auto;
   }
 
   .output-container {
@@ -185,10 +161,27 @@ span {
   }
 
   .output-wrapper {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
   }
 
   .output-value {
     width: 100%;
+    overflow-x: auto;
+  }
+
+  .output {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    width: 220px;
+  }
+
+  .reset-btn {
+    width: 220px;
   }
 }
